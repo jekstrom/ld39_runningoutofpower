@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1181489057653436}
+  m_IsPrefabParent: 1
+--- !u!1 &1181489057653436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4038201355709012}
+  - component: {fileID: 114324466048375840}
+  m_Layer: 0
+  m_Name: Waves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4038201355709012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181489057653436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 327.5525, y: 290.23474, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114324466048375840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181489057653436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d06e33d4e8fa4e937ce6716f429e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 114380407737495842, guid: 7179951bfb6d43a428b61c7a46227dfe, type: 2}
+  waves:
+  - count: 5
+    enemy: {fileID: 114119350491167282, guid: c9ccc3b36d2532e43b79090952f2b7f0, type: 2}
+    boss: {fileID: 114760343097939316, guid: 5c006329211df5c40a426687c1004b88, type: 2}
+    cooldown: 2.8
+  - count: 10
+    enemy: {fileID: 114119350491167282, guid: c9ccc3b36d2532e43b79090952f2b7f0, type: 2}
+    boss: {fileID: 114760343097939316, guid: 5c006329211df5c40a426687c1004b88, type: 2}
+    cooldown: 2
+  - count: 15
+    enemy: {fileID: 114119350491167282, guid: c9ccc3b36d2532e43b79090952f2b7f0, type: 2}
+    boss: {fileID: 114213638620336888, guid: a788ddd6153e14647905caad4e0d1563, type: 2}
+    cooldown: 2
+  - count: 20
+    enemy: {fileID: 114119350491167282, guid: c9ccc3b36d2532e43b79090952f2b7f0, type: 2}
+    boss: {fileID: 114213638620336888, guid: a788ddd6153e14647905caad4e0d1563, type: 2}
+    cooldown: 1.8
+  - count: 30
+    enemy: {fileID: 114119350491167282, guid: c9ccc3b36d2532e43b79090952f2b7f0, type: 2}
+    boss: {fileID: 114213638620336888, guid: a788ddd6153e14647905caad4e0d1563, type: 2}
+    cooldown: 1.5
+  spawnPoints:
+  - {fileID: 114507104861212372, guid: 109111de68ecbd84ca1d2fd92113f856, type: 2}
+  - {fileID: 114403897065301340, guid: 109111de68ecbd84ca1d2fd92113f856, type: 2}
+  - {fileID: 114424731661826350, guid: 109111de68ecbd84ca1d2fd92113f856, type: 2}
+  - {fileID: 114372908116164794, guid: 109111de68ecbd84ca1d2fd92113f856, type: 2}
+  - {fileID: 114835594820889994, guid: 109111de68ecbd84ca1d2fd92113f856, type: 2}

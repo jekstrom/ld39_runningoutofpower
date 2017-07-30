@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bullet
+  - Powerup
+  - Healthpack
+  - Laser
+  - BFG
+  - Splitshot
+  - BFGBeam
+  - Background
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1567669537
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Corpses
+    uniqueID: 809775057
+    locked: 0
+  - name: Drops
+    uniqueID: 3343625415
+    locked: 0
+  - name: Player
+    uniqueID: 2269835053
+    locked: 0
