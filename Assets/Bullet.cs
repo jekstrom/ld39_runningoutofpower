@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour, IProjectile
 
 	private GameObject _target;
 	private float distanceTraveled;
+	private float soundCooldown = 0.5f;
 
 	public int Damage { get { return damage; } }
 
@@ -57,5 +58,18 @@ public class Bullet : MonoBehaviour, IProjectile
 	public void SetTarget(GameObject t)
 	{
 		_target = t;
+	}
+
+	public void Die()
+	{
+		GetComponentInChildren<SpriteRenderer>().enabled = false;
+		GetComponentInChildren<BoxCollider2D>().enabled = false;
+
+		Invoke("KillObject", soundCooldown);
+	}
+
+	private void KillObject()
+	{
+		GameObject.Destroy(gameObject);
 	}
 }

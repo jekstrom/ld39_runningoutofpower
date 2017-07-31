@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class BFGBeam : MonoBehaviour, IProjectile
 {
@@ -17,6 +18,7 @@ public class BFGBeam : MonoBehaviour, IProjectile
 	private bool _exploded = false;
 	private SpriteRenderer _sprite;
 	private GameObject _explosion;
+	private float soundCooldown = 0.5f;
 
 	public int Damage { get { return damage; } }
 
@@ -110,5 +112,17 @@ public class BFGBeam : MonoBehaviour, IProjectile
 			}
 			//GameObject.Destroy(gameObject);
 		}
+	}
+	public void Die()
+	{
+		GetComponentInChildren<SpriteRenderer>().enabled = false;
+		GetComponentInChildren<BoxCollider2D>().enabled = false;
+
+		Invoke("KillObject", soundCooldown);
+	}
+
+	private void KillObject()
+	{
+		GameObject.Destroy(gameObject);
 	}
 }

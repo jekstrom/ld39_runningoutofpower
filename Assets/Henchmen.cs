@@ -90,7 +90,8 @@ public class Henchmen : MonoBehaviour
 				TakeDamage(proj.Damage);
 			}
 
-			GameObject.Destroy(collider.gameObject);
+			proj.Die();
+			//GameObject.Destroy(collider.gameObject);
 		}
 		else if (collider.tag == "BFGBeam")
 		{

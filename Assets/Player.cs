@@ -137,8 +137,8 @@ public class Player : MonoBehaviour
 			if (proj != null)
 			{
 				TakeDamage(proj.Damage);
+				proj.Die();
 			}
-			GameObject.Destroy(collider.gameObject);
 		}
 	}
 
